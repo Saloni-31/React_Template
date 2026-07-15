@@ -22,7 +22,7 @@ function Hero() {
 
           {/* Slide 2 */}
           <div className="carousel-item">
-            <img src="./src/assets/images/hero-bg2.png" className="d-block w-100" alt="Hero background" />
+            <img src="./src/assets/images/hero-bg.png" className="d-block w-100" alt="Hero background" />
             <div className="overlay"></div>
             <div className="carousel-caption">
               <h1>TEMPLATE_1</h1>

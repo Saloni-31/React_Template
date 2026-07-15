@@ -539,7 +539,7 @@ button{
 	margin-top:60px;
 	background:
 	linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.75)),
-	url('images/video-bg.jpg');
+	url('./assets/images/video-bg.jpg');
 	background-size:cover;
 	background-position:center;
 	padding:95px 0 100px 0;
