@@ -1,3 +1,8 @@
+import facebookIcon from "../assets/icons/facebook1.svg";
+import twitterIcon from "../assets/icons/twitter1.svg";
+import dribbbleIcon from "../assets/icons/dribbble.svg";
+import linkedinIcon from "../assets/icons/linkedin.svg";
+import beeIcon from "../assets/icons/bee.svg";
 function Footer() {
   return (
     <>
@@ -12,16 +17,16 @@ function Footer() {
               </p>
               <div className="social-badges">
                 <a href="#" className="badge-fb">
-                  <img src="./assets/icons/facebook1.svg" alt="Facebook" className="social-icon" /> 136
+                  <img src={facebookIcon} alt="Facebook" className="social-icon" /> 136
                 </a>
                 <a href="#" className="badge-tw">
-                  <img src="./assets/icons/twitter1.svg" alt="Twitter" className="social-icon" /> 68
+                  <img src={twitterIcon} alt="Twitter" className="social-icon" /> 68
                 </a>
                 <a href="#" className="badge-dr">
-                  <img src="./assets/icons/dribbble.svg" alt="Dribbble" className="social-icon" /> 16
+                  <img src={dribbbleIcon} alt="Dribbble" className="social-icon" /> 16
                 </a>
                 <a href="#" className="badge-li">
-                  <img src="./assets/icons/linkedin.svg" alt="LinkedIn" className="social-icon" /> 13
+                  <img src={linkedinIcon} alt="LinkedIn" className="social-icon" /> 13
                 </a>
               </div>
             </div>
@@ -63,7 +68,7 @@ function Footer() {
           <div className="footer-bottom-inner">
             <div>&copy; 2016 PSDfreebies.com &mdash; All Right Reserved</div>
             <div className="brand">
-              Design by: <img src="./assets/icons/bee.svg" alt="Bee logo" className="bee-icon" /> PSDFreebies.com
+              Design by: <img src={beeIcon} alt="Bee logo" className="bee-icon" /> PSDFreebies.com
             </div>
           </div>
         </div>
