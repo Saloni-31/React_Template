@@ -1,24 +1,28 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Welcome from './components/Welcome';
-import News from './components/News';
-import Products from './components/Products';
-import Video from './components/Video';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Header from "./components/Header";
+
+import Home from "./pages/Home";
+import Pages from "./pages/Pages";
+import Features from "./pages/Features";
+import Extensions from "./pages/Extensions";
+import Tutorials from "./pages/Tutorials";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <Hero />
-      <Services />
-      <Welcome />
-      <News />
-      <Products />
-      <Video />
-      <Footer />
-    </>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/pages" element={<Pages />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/extensions" element={<Extensions />} />
+        <Route path="/tutorials" element={<Tutorials />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

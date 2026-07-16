@@ -1,28 +1,46 @@
+import { NavLink } from "react-router-dom";
+import mountain from "../assets/icons/mountain.svg";
+import twitter from "../assets/icons/twitter.svg";
+import facebook from "../assets/icons/facebook.svg";
+import googlePlus from "../assets/icons/google-plus.svg";
+import pinterest from "../assets/icons/pinterest.svg";
+
 function Header() {
   return (
     <header>
       <div className="logo">
-        <img src="./src/assets/icons/mountain.svg" className="mountain" alt="Mountain logo" />
+        <img src={mountain} className="mountain" alt="Mountain logo" />
         <span>YOO</span>PIN
       </div>
 
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Extensions</a></li>
-          <li><a href="#">Tutorials</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/pages">Pages</NavLink></li>
+          <li><NavLink to="/features">Features</NavLink></li>
+          <li><NavLink to="/extensions">Extensions</NavLink></li>
+          <li><NavLink to="/tutorials">Tutorials</NavLink></li>
+          <li><NavLink to="/contact">Contact Us</NavLink></li>
         </ul>
       </nav>
 
       <div className="social">
-        <img src="./src/assets/icons/twitter.svg" className="twitter" alt="Twitter" />
-        <img src="./src/assets/icons/facebook.svg" className="facebook" alt="Facebook" />
-        <img src="./src/assets/icons/google-plus.svg" className="googleplus" alt="Google Plus" />
-        <img src="./src/assets/icons/pinterest.svg" className="pinterest" alt="Pinterest" />
-      </div>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+      <img src={twitter} className="twitter" alt="Twitter" />
+      </a>
+
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+      <img src={facebook} className="facebook" alt="Facebook" />
+      </a>
+
+      <a href="https://plus.google.com" target="_blank" rel="noopener noreferrer">
+      <img src={googlePlus} className="googleplus" alt="Google Plus" />
+      </a>
+
+      <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">
+      <img src={pinterest} className="pinterest" alt="Pinterest" />
+      </a>
+    </div>
     </header>
   );
 }
