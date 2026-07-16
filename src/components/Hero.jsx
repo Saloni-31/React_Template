@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Hero() {
   return (
     <section className="hero">
@@ -13,12 +14,11 @@ function Hero() {
               <h6>power by psdfreebies.com</h6>
               <p>
                 Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget <br />
-                lacinia odio sem nec elit. Aenean eu leo quam
-              </p>
-              <button className="btn btn-light">View more</button>
-              <button className="btn btn-light">Contact us</button>
+                lacinia odio sem nec elit. Aenean eu leo quam </p>
+              <Link to="/login" className="btn btn-outline-light">Login</Link>
+			  <Link to="/signup" className="btn btn-warning">Sign Up</Link>
             </div>
-          </div>
+			</div>
 
           {/* Slide 2 */}
           <div className="carousel-item">

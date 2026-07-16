@@ -8,6 +8,8 @@ import Features from "./pages/Features";
 import Extensions from "./pages/Extensions";
 import Tutorials from "./pages/Tutorials";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/extensions" element={<Extensions />} />
         <Route path="/tutorials" element={<Tutorials />} />
         <Route path="/contact" element={<Contact />} />
+		<Route path="/login" element={<Login />} />
+		<Route path="/signup" element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );

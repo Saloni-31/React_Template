@@ -21,7 +21,7 @@ function Header() {
           <li><NavLink to="/extensions">Extensions</NavLink></li>
           <li><NavLink to="/tutorials">Tutorials</NavLink></li>
           <li><NavLink to="/contact">Contact Us</NavLink></li>
-        </ul>
+		</ul>
       </nav>
 
       <div className="social">
